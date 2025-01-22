@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  body {
+    background-color: #f0f4f8; /* Light background color for the body */
+    font-family: 'Arial', sans-serif;
+    color: #333;  /* Text color */
+}
+  h1 {
+    background-color: black;
+    color: #c39999;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 0 0 30px 30px; /* Rounded bottom corners */
+    margin-bottom: 2rem;
+  }
+  
+  .choice {
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease,background-color 0.3s ease;
+    background-color: #5e798d; /* Default color: Tomato */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .choice:hover {
+    cursor: pointer;
+    background-color: #996e61;
+    transform: translateY(-5px);
+  }
+  
+  img {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+  
+  .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+  }
+  
+  #user-score,
+  #comp-score {
+    font-size: 4rem;
+    color: #4CAF50;
+  }
+  
+  .msg-container {
+    margin-top: 5rem;
+  }
+  
+  #msg {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.5rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 60%;  /* Adjust width for better spacing */
+    margin-left: 1%;
+}
+
+#msg.green {
+    background-color: #4CAF50; /* Green background for win message */
+}
+
+#msg.red {
+    background-color: #f44336; /* Red background for loss message */
+}
+
+#msg.default {
+    background-color: #333; /* Default message background color */
+}
